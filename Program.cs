@@ -36,13 +36,14 @@ namespace SF4._2
 						Console.WriteLine("Your color is cyan!");
 						break;
 
-					default:
+					case "yellow":
 						Console.BackgroundColor = ConsoleColor.Yellow;
 						Console.ForegroundColor = ConsoleColor.Red;
 
 						Console.WriteLine("Your color is yellow!");
 						break;
-
+					default:
+						continue;
 				}
 				t++;
 			} while (t <= 2);
